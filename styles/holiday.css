@@ -5,18 +5,123 @@ body{
   /*fix the family later*/
 }
 .wrapallindex{
-    width: 80%;
+    width: 100%;
     margin-right: auto;
     margin-left: auto;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     min-width: 1200px;
     max-width: 1480px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 100% 1fr 3fr 1fr;
+    grid-template-rows: 50% 1fr 3fr 1fr;
     grid-template-areas:
     "hero"
     "nav"
     "main"
     "footer";
+}
+#mainpage{
+  grid-area: hero;
+  background: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2)),url(hero.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 70%;
+  background-size: cover;
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-content: center;
+  justify-items: center;
+}
+header{
+  font-family: Kuashan Script;
+  font-size: 3em;
+  color: rgb(0, 0, 0);
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+h1{
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+#mainlogo{
+  display: flex;
+  align-self: center;
+}
+
+nav{
+  grid-area: nav;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #29AAF3;
+  font-size: 2.3em;
+
+}
+nav a{
+  text-decoration: none;
+}
+main{
+  grid-area: main;
+}
+footer{
+  grid-area: footer;
+  font-size: 0.60em;
+  font-style: italic;
+  text-align: center;
+  background-color: #29AAF3;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#quickbutton{
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+#button{
+  display: flex;
+  z-index: 1;
+  padding: 2em;
+  padding-left: 4em;
+  padding-right: 4em;
+  border: solid;
+  border-color:#00171F;
+  background-color: rgba(0,52,89,.75);
+  color: white;
+  font-size: 1.8em;
+}
+.slide-out {
+  position: absolute;
+  top: 9.5em;
+  width: 54vw;
+  z-index: 0;
+  background-color: rgba(0,52,89,.75);
+  display: flex !important;
+  justify-self: end;
+  justify-content: start;
+}
+#hiddenbutton{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+#link{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: start;
+  font-size: 1.8em;
+  flex-wrap:wrap;
+}
+#link a{
+  text-decoration: none;
+}
+h2{
+  font-size: 2em;
+}
+main p{
+  margin-left: 5%;
 }

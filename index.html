@@ -8,20 +8,24 @@
 
 <body>
     <div class="wrapallindex">
-        <header>
-            <!--header with logo and name-->
-            <h1>Pacific Holiday</h1>
-            <img src="assets/logo.jpg" alt="Logo" width="210" height="300">
-        </header>
+        <div id="mainpage">
+            <header>
+                <!--header with logo and name-->
+                <h1>Pacific Holiday</h1>
+                <img id="mainlogo" src="assets/logo.png" alt="Logo" width="200" height="200">
+            </header>
         <!-- this will be the button code-->
-        <div id="quickbutton">
-            <button onclick="">
-                Quick Travel
-            </button>
-            <div id="hiddenbutton">
-                <a href="asia.html"> Asia</a>&nbsp;
-                <a href="oceania.html"> Australia</a>&nbsp;
-                <a href="islands.html"> Hawaii</a>&nbsp;
+            <div id="quickbutton">
+                <button onclick="openMenu()" id="button">
+                    Quick Travel
+                </button>
+                <div id="hiddenbutton" style="display: none">
+                    <div id="link">
+                    <a href="asia.html"> Asia</a>&nbsp;
+                    <a href="oceania.html"> Australia</a>&nbsp;
+                    <a href="islands.html"> Hawaii</a>&nbsp;
+                    </div>
+                </div>
             </div>
         </div>
         <!--nav bar-->
@@ -31,7 +35,7 @@
             <a href="pack.html"> What to Pack?</a>&nbsp;
             <a href="contact.html"> Contact</a>&nbsp;
             <!--logo on the side-->
-            <img src="assets/logo.jpg" alt="Logo" width="210" height="300">
+            <img src="assets/logo.png" alt="Logo" width="200" height="200">
         </nav>
         <!--Content of the page under-->
         <main>
@@ -58,4 +62,11 @@
         </footer>
     </div>
 </body>
+<script>
+
+    function openMenu() {
+      var menu = document.getElementById("hiddenbutton");
+      menu.classList.toggle("slide-out");
+    }
+  </script>
 </html>
