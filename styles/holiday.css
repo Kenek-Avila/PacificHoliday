@@ -30,7 +30,7 @@ body{
   max-width: 1920px;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 2fr 50%, 1fr;
+  grid-template-rows: 30% 70% 90% 10%;
   grid-template-areas:
   "pagetop"
   "pagehero"
