@@ -125,6 +125,7 @@ footer{
   padding-left: 4em;
   padding-right: 4em;
   border: solid;
+  border-top:none;
   border-color:#00171F;
   background-color: rgba(0,52,89,.75);
   color: white;
@@ -139,6 +140,8 @@ footer{
   display: flex !important;
   justify-self: end;
   justify-content: start;
+  border:solid;
+  border-color: #00171F;
 }
 #hiddenbutton{  
   display: flex;
