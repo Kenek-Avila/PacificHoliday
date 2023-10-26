@@ -47,6 +47,7 @@ body{
   background-repeat: no-repeat;
   background-position: 50% 70%;
   background-size: cover;
+  min-height: fit-content;
   display:flex;
   flex-direction: column;
   flex-wrap: wrap;
