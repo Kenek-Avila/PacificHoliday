@@ -3,6 +3,8 @@
 body{
   margin-left: 0;
   margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
   background-color: white;  
   color: #00171F;
   font-family: 'Averia Serif Libre', Arial, serif;
@@ -91,8 +93,8 @@ nav a{
   color: #00171F;
 }
 nav img{
-  height: 2.3em;
-  width: 2.3em;
+  height: 4em;
+  width: 4em;
 }
 main{
   grid-area: main;
