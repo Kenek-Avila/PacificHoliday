@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 body{
+  margin-left: 0;
+  margin-right: 0;
   background-color: white;  
   color: #00171F;
   font-family: 'Averia-Serif-Libre', Arial, serif;
@@ -30,7 +32,7 @@ body{
   max-width: 1920px;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 20% 80% 90% 10%;
+  grid-template-rows: 15% 40% 45% 5%;
   grid-template-areas:
   "pagetop"
   "pagehero"
@@ -194,6 +196,5 @@ main p{
   width: 100%;
   height: 65%;
   object-fit: cover; 
-  object-position: 50%, auto;
      
 }
