@@ -5,7 +5,7 @@ body{
   margin-right: 0;
   background-color: white;  
   color: #00171F;
-  font-family: 'Averia-Serif-Libre', Arial, serif;
+  font-family: 'Averia Serif Libre', Arial, serif;
 }
 .wrapallindex{
     width: 100%;
@@ -88,6 +88,7 @@ nav{
 }
 nav a{
   text-decoration: none;
+  color: #00171F;
 }
 nav img{
   height: 2.3em;
@@ -106,6 +107,7 @@ footer{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 20px;
 }
 #quickbutton{
   object-position: relative;
@@ -128,8 +130,8 @@ footer{
 }
 .slide-out {
   position: absolute;
-  top: 9.5em;
-  width: 54vw;
+  top: 9.4em;
+  width: 60%;
   z-index: 0;
   background-color: rgba(0,52,89,.75);
   display: flex !important;
@@ -151,6 +153,7 @@ footer{
 }
 #link a{
   text-decoration: none;
+  color: white;
 }
 h2{
   font-size: 2em;
@@ -195,6 +198,11 @@ main p{
   grid-area: pagehero;
   width: 100%;
   height: auto;
+  max-height: 65%;
   object-fit: cover; 
      
+}
+main a {
+  color: #00171F;
+  text-decoration: none;
 }
