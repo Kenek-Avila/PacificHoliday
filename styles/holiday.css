@@ -10,8 +10,8 @@ body{
     margin-right: auto;
     margin-left: auto;
     background-color: rgb(255, 255, 255);
-    min-width: 1200px;
-    max-width: 1480px;
+    min-width: 800px;
+    max-width: 1920px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 55% 1fr 3fr 1fr;
