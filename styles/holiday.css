@@ -18,7 +18,7 @@ body{
     max-width: 1920px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 90% 15% 70% 10% ;
+    grid-template-rows: 90% auto auto auto ;
     grid-template-areas:
     "hero"
     "nav"
@@ -86,18 +86,51 @@ nav{
   align-items: center;
   justify-content: space-around;
   background-color: #29AAF3;
-  font-size: 2.3em;
+  font-size: 1.5em;
 }
 nav a{
   text-decoration: none;
   color: #00171F;
 }
 nav img{
-  height: 4em;
-  width: 4em;
+  height: 3em;
+  width: 3em;
 }
 main{
   grid-area: main;
+}
+#mainindex{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+  "index1 index2 index3";
+  padding-left: 2em;
+  padding-right: 2em;
+  grid-gap: 1em;
+}
+#main1{
+  grid-area: index1;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(royalty.jpg);
+}
+#main2{
+  grid-area: index2;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(history.jpg);
+}
+#main3{
+  grid-area: index3;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(island.jpg);
+}
+#mainindex .info{
+  border: solid;
+  border-color: #29AAF3;
+  padding: 0.5em;
+  margin-top: 1em;
+  /*background-color: rgba(0,0,0,0.40);*/
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: azure;
 }
 footer{
   grid-area: footer;
@@ -198,7 +231,7 @@ main p{
   align-items: center;
   justify-content: space-around;
   background-color: #29AAF3;
-  font-size: 2.3em;
+  font-size: 1.5em;
 }
 .hero{
   grid-area: pagehero;
@@ -208,14 +241,56 @@ main p{
      
 }
 main a {
-  color: #00171F;
+  color: white;
   text-decoration: none;
 }
 #pagemain{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
+  align-content: center;
 }
+#pagemain #desc{
+  margin: 1em;
+  margin-left: 30%;
+  margin-right: 30%;
+  display: flex;
+  justify-self: center;
+  flex-direction: column;
+  text-align: center;
+}
+#tour1{
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(islands.jpg);
+
+}
+#tour2{
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(oceania.jpg);
+}
+#tour3{
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(asia.jpg);
+}
+#pagemain .info{
+  text-align: center;
+  margin: 1em;
+  margin-left: 20%;
+  margin-right: 20%;
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  border: solid;
+  border-color: #29AAF3;
+  padding: 0.5em;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+  
+#pagemain ul{
+  text-align: start;
+}
+#pagemain li{
+  padding-top: 0.5em;
+}
+
 /*accordion list for packing*/
 #accordion{
   margin: 100px auto;
@@ -258,4 +333,56 @@ main a {
 }
 #accordion label + input[type="radio"]:checked + .packcontent{
   max-height: 400px;
+}
+/*small pages*/
+
+.smallpage{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  /*grid-template-areas: 
+  "one two"
+  "three four";*/
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(about.jpg);
+  background-size:cover;
+  color: white;
+}
+.aboutblock{
+  margin: 1em;
+  border: solid;
+  border-color: #29AAF3;
+  background-color: rgba(0, 23, 31, 0.262);
+  padding: 0.5em;
+}
+
+.smallfoot{
+  margin: 0px;
+}
+#contact{
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(contact.jpg);
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  padding: 1em;
+  padding-left: 10%;
+  padding-right: 10%;
+  justify-items: center;
+}
+form{
+  justify-self: center;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 12em 1fr;
+  grid-gap: 1em;
+}
+input{
+  width: 80%;
+}
+textarea{
+  width: 80%;
+  padding-bottom: 4em;
+}
+select{
+  width: 80%;
 }
