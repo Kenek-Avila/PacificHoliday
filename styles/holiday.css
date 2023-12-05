@@ -18,7 +18,7 @@ body{
     max-width: 1920px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 90% auto auto auto ;
+    grid-template-rows: 75% auto auto auto ;
     grid-template-areas:
     "hero"
     "nav"
@@ -44,6 +44,7 @@ body{
 #mainpage{
   grid-area: hero;
   background: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2)),url(hero.jpg);
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: 50% 70%;
   background-size: cover;
@@ -95,6 +96,11 @@ nav a{
 nav img{
   height: 3em;
   width: 3em;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 main{
   grid-area: main;
