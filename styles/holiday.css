@@ -18,7 +18,7 @@ body{
     max-width: 1920px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 75% auto auto auto ;
+    grid-template-rows: 100% auto auto auto ;
     grid-template-areas:
     "hero"
     "nav"
@@ -129,7 +129,7 @@ main{
   grid-area: index2;
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(history.jpg);
 }
-#main3{
+#main3{ 
   grid-area: index3;
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(island.jpg);
 }
