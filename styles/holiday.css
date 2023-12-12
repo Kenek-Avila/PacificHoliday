@@ -366,6 +366,7 @@ main a {
   grid-template-areas: 
   "image header"
   "image navbar";
+  justify-content: start;
 }
 #combine h1{
   z-index: 50;
