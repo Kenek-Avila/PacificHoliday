@@ -188,6 +188,7 @@ footer{
   border-top: none;
   border:solid;
   border-color: #00171F;
+  z-index: 3;
 }
 #hiddenbutton{  
   display: flex;
